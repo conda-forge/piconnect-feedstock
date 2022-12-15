@@ -19,10 +19,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python
   run:
     - pandas
-    - python >=3.8
+    - python
     - pythonnet
     - pytz
     - wrapt
