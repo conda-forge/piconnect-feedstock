@@ -1,5 +1,5 @@
 {% set name = "piconnect" %}
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PIconnect-{{ version }}.tar.gz
-  sha256: b3f1979067f66a1bbb66be6cf01abe60db7c71e56e12498877ab6e78c2611eb5
+  sha256: 7f1a4a7595c35be645150c2e8ace41b44e42725b22983228b6cc51e4395b9687
 
 build:
   number: 0
@@ -20,7 +20,6 @@ requirements:
     - pip
     - python >=3.8
   run:
-    - future
     - pandas
     - python >=3.8
     - pythonnet
