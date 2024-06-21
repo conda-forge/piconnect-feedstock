@@ -2,6 +2,9 @@ azure:
   settings_win:
     pool:
       vmImage: windows-2019
+bot:
+  automerge: false
+  inspection: update-all
 conda_forge_output_validation: true
 github:
   branch_name: main
