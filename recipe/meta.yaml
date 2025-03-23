@@ -1,5 +1,5 @@
 {% set name = "piconnect" %}
-{% set version = "0.12.1" %}
+{% set version = "0.12.3" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fdbfb4e3693f52c62420f17501a8d4f212f5ef715fd0b2360e30a4ab3ee7decf
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: dfd47579fcb214160e1bb88a76a88bb8609c65789f8af2f3419b4c134b363076
 
 build:
   number: 0
@@ -21,10 +21,11 @@ requirements:
     - pip
     - python
   run:
-    - pandas
+    - numpy >=2,<3
+    - pandas >=2,<3
     - python
-    - pythonnet
-    - wrapt
+    - pythonnet >=3
+    - wrapt >=1.17,<2
 
 test:
   imports:
