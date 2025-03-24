@@ -3,9 +3,9 @@ About piconnect-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/piconnect-feedstock/blob/main/LICENSE.txt)
 
+Home: https://github.com/Hugovdberg/PIconnect
 
-
-Package license: 
+Package license: MIT
 
 Summary: PIconnect - Connector to the OSISoft PI and PI-AF databases.
 
@@ -95,10 +95,11 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>All platforms:</td>
+<table><tr><td>All platforms:</td>
     <td>
-      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=13636&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/piconnect-feedstock?branchName=main">
+      </a>
     </td>
   </tr>
 </table>
