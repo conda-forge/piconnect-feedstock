@@ -8,7 +8,7 @@ package:
 
 source:
 - url: https://pypi.org/packages/source/p/piconnect/piconnect-${{ version }}.tar.gz
-  sha256: 8950b3ce44072597d13ad8b71516a6726711c3345fe302082e559e02068309fd
+  sha256: a9498321b07df3a964a336c49239fa67b85b36a66c563a9d6fd576306549cfc4
 
 build:
   number: 0
