@@ -1,5 +1,5 @@
 context:
-  version: 0.12.3
+  version: 0.12.4
   python_min: 3.11
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
 - url: https://pypi.org/packages/source/p/piconnect/piconnect-${{ version }}.tar.gz
-  sha256: dfd47579fcb214160e1bb88a76a88bb8609c65789f8af2f3419b4c134b363076
+  sha256: 8950b3ce44072597d13ad8b71516a6726711c3345fe302082e559e02068309fd
 
 build:
   number: 0
