@@ -21,7 +21,6 @@ requirements:
     - setuptools >=75.0
     - versioneer >=0.28
     - pip
-    - dotnet-runtime >=3.1
   run:
     - python >=${{ python_min }}
     - pandas <3,>=2
@@ -30,10 +29,17 @@ requirements:
     - wrapt <2,>=1.17
 
 tests:
-  - python:
-      imports:
-        - PIconnect
-      pip_check: true
+  - script:
+    - python -c "import PIconnect"
+    requirements:
+      run:
+        - python ==${{ python_min }}
+        - dotnet-runtime >=3.1
+  - package_contents:
+      site_packages:
+        - piconnect
+        - piconnect._typing
+        - piconnect._typing.dotnet
 
 about:
   homepage: https://github.com/Hugovdberg/PIconnect
