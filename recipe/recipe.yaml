@@ -30,6 +30,7 @@ requirements:
 
 tests:
   - script:
+    - export TF_BUILD=true
     - python -c "import PIconnect"
     requirements:
       run:
