@@ -37,9 +37,9 @@ tests:
         - dotnet-runtime >=3.1
   - package_contents:
       site_packages:
-        - piconnect
-        - piconnect._typing
-        - piconnect._typing.dotnet
+        - PIconnect
+        - PIconnect._typing
+        - PIconnect._typing.dotnet
 
 about:
   homepage: https://github.com/Hugovdberg/PIconnect
