@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python #>= ${{ python_min }}
+    - python
     - setuptools >=75.0
     - versioneer >=0.28
     - pip
   run:
-    - python >= ${{ python_min }}
+    - python
     - pandas <3,>=2
     - numpy <3,>=2
     - pythonnet >=3
