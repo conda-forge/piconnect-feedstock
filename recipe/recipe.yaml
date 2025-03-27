@@ -11,7 +11,7 @@ source:
   sha256: a9498321b07df3a964a336c49239fa67b85b36a66c563a9d6fd576306549cfc4
 
 build:
-  number: 0
+  number: 1
   script: ${{ PYTHON }} -m pip install .
   noarch: python
 
@@ -35,7 +35,6 @@ tests:
     requirements:
       run:
         - python ==${{ python_min }}
-        - dotnet-runtime >=3.1
   - package_contents:
       site_packages:
         - PIconnect
