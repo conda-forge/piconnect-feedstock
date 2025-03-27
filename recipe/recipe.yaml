@@ -7,22 +7,23 @@ package:
   version: ${{ version }}
 
 source:
-- url: https://pypi.org/packages/source/p/piconnect/piconnect-${{ version }}.tar.gz
-  sha256: a9498321b07df3a964a336c49239fa67b85b36a66c563a9d6fd576306549cfc4
+  - url: https://pypi.org/packages/source/p/piconnect/piconnect-${{ version }}.tar.gz
+    sha256: a9498321b07df3a964a336c49239fa67b85b36a66c563a9d6fd576306549cfc4
 
 build:
   number: 1
   script: ${{ PYTHON }} -m pip install .
-  noarch: python
+  skip:
+    - unix
 
 requirements:
   host:
-    - python ==${{ python_min }}
+    - python #>= ${{ python_min }}
     - setuptools >=75.0
     - versioneer >=0.28
     - pip
   run:
-    - python >=${{ python_min }}
+    - python >= ${{ python_min }}
     - pandas <3,>=2
     - numpy <3,>=2
     - pythonnet >=3
@@ -30,11 +31,8 @@ requirements:
 
 tests:
   - script:
-    - export TF_BUILD=true
-    - python -c "import PIconnect"
-    requirements:
-      run:
-        - python ==${{ python_min }}
+      - set TF_BUILD=true
+      - python -c "import PIconnect"
   - package_contents:
       site_packages:
         - PIconnect
