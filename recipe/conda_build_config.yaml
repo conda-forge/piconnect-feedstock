@@ -1,7 +1,5 @@
 numpy:
   - 2
-  - 2
-  - 2
 python:
   - 3.11.* *_cpython
   - 3.12.* *_cpython
@@ -14,5 +12,3 @@ is_python_min:
   - false
 python_impl:
   - cpython
-  - cpython
-  - cp313
