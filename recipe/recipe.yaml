@@ -1,6 +1,6 @@
 context:
   version: 0.12.4
-  python_min: 3.11
+  python_min: "3.11"
 
 package:
   name: piconnect
@@ -11,7 +11,7 @@ source:
     sha256: a9498321b07df3a964a336c49239fa67b85b36a66c563a9d6fd576306549cfc4
 
 build:
-  number: 1
+  number: 2
   script: ${{ PYTHON }} -m pip install .
   skip:
     - unix
